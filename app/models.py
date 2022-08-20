@@ -6,12 +6,12 @@ class Patients(models.Model):
         ('M', 'M'),
         ('F', 'F'),
     )
-    id = models.IntegerField(primary_key=True, null=False)
+    id = models.IntegerField(primary_key=True, null=False, blank=False)
     name = models.CharField(max_length=60)
     phone = models.CharField(max_length=20)
     email = models.CharField(max_length=60)
     age = models.CharField(max_length=60)
-    gender = models.CharField(max_length=1, null=True, choices=GENDER)
+    gender = models.CharField(max_length=1, null=True, blank=True, choices=GENDER)
     note = models.TextField()
     created_at=models.DateTimeField(auto_now_add=True)
 
