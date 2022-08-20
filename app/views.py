@@ -35,6 +35,7 @@ def backend(request):
 @cache_control(no_cache=True, must_revalidate=True, no_store=True)
 @login_required(login_url="login")
 def add_patient(request):
+    
     if request.method == 'POST':
         
         if request.POST.get("name") and request.POST.get('phone') and request.POST.get('email') and request.POST.get('age') and request.POST.get('gender') or request.POST.get('note') or request.POST.get('created_at'):
