@@ -6,7 +6,7 @@ class Patients(models.Model):
         ('M', 'M'),
         ('F', 'F'),
     )
-    id = models.IntegerField(primary_key=True)
+    id = models.IntegerField(primary_key=True, null=False, blank=False)
     name = models.CharField(max_length=60, null=True, blank=True,)
     phone = models.CharField(max_length=20, null=True, blank=True,)
     email = models.CharField(max_length=60, null=True, blank=True,)
