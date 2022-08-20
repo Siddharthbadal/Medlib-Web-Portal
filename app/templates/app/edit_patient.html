@@ -1,0 +1,62 @@
+{% extends 'app/add_patient.html' %}
+
+
+{% block title %}
+           | Edit Patient
+{% endblock title %}
+
+<!-- nav icon block -->
+
+{% block icon-nav %}
+<a href="" class="navbar-brand flex-grow-1" style='text-align: center; color:#fff; margin-left:25px;'>
+
+<i class="fas fa-user-edit"></i>&nbsp;&nbsp;Edit patient  
+{% endblock %}
+
+
+<!-- nav logout block -->
+{% block btn-nav %}
+    <a class='btn btn-danjer-primary btn-sm border-light text-light' id='btn-nav' data-bs-toggle="modal" data-bs-target="#logoutModal">Logout</a>
+{% endblock btn-nav %}
+
+
+<!-- card title block -->
+
+{% block card-title %} 
+<b>{{ patient.name}}</b> &nbsp;
+
+
+{% endblock card-title %}
+
+
+{% block form-action %}
+    action="{% url 'edit_patient' %}"
+{% endblock form-action %}
+
+
+
+
+<!-- blocks for diffrnt form values -->
+{% block patient_name %} value="{{ patient.name}}"{% endblock patient_name %}
+
+{% block patient_phone %} value="{{ patient.phone}}"{% endblock patient_phone %}
+
+{% block patient_email %} value="{{ patient.email}}" {% endblock patient_email %}
+
+{% block patient_age %}value="{{ patient.age}}" {% endblock patient_age %}
+
+{% block patient_gender %} value="{{ patient.gender}}"{% endblock patient_gender %}
+
+{% block patient_note %}{{ patient.note}}{% endblock patient_note %}
+
+
+
+<!-- Edit block -->
+
+{% block save-btn %}
+<i class='fas fa-save'></i>&nbsp; save
+{% endblock save-btn %}
+
+{% block id-hidden %} 
+ <input type='hidden' value="{{ patient.id}}" name='id'/>
+{% endblock id-hidden %}
