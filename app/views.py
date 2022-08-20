@@ -37,7 +37,7 @@ def backend(request):
 def add_patient(request):
     if request.method == 'POST':
         
-        if request.POST.get("name") and request.POST.get('phone') and request.POST.get('email') and request.POST.get('age') and request.POST.get('gender') or request.POST.get('note'):
+        if request.POST.get("name") and request.POST.get('phone') and request.POST.get('email') and request.POST.get('age') and request.POST.get('gender') or request.POST.get('note') or request.POST.get('created_at'):
             patient = Patients()
             
             patient.id = request.POST.get('id')
