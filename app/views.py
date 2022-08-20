@@ -40,7 +40,7 @@ def add_patient(request):
         if request.POST.get("name") and request.POST.get('phone') and request.POST.get('email') and request.POST.get('age') and request.POST.get('gender') or request.POST.get('note') or request.POST.get('created_at'):
             patient = Patients()
             
-            patient.id = request.POST.get('id')
+            
             patient.name = request.POST.get('name')
             patient.phone = request.POST.get('phone')
             patient.email = request.POST.get('email')
