@@ -5,7 +5,7 @@
            | Edit Patient
 {% endblock title %}
 
-<!-- nav icon block -->
+
 
 {% block icon-nav %}
 <a href="" class="navbar-brand flex-grow-1" style='text-align: center; color:#fff; margin-left:25px;'>
@@ -14,13 +14,13 @@
 {% endblock %}
 
 
-<!-- nav logout block -->
+{% comment %} <!-- nav logout block --> {% endcomment %}
 {% block btn-nav %}
     <a class='btn btn-danjer-primary btn-sm border-light text-light' id='btn-nav' data-bs-toggle="modal" data-bs-target="#logoutModal">Logout</a>
 {% endblock btn-nav %}
 
 
-<!-- card title block -->
+{% comment %} <!-- card title block --> {% endcomment %}
 
 {% block card-title %} 
 <b>{{ patient.name}}</b> &nbsp;
@@ -36,7 +36,7 @@
 
 
 
-<!-- blocks for diffrnt form values -->
+{% comment %} <!-- blocks for diffrnt form values --> {% endcomment %}
 {% block patient_name %} value="{{ patient.name}}"{% endblock patient_name %}
 
 {% block patient_phone %} value="{{ patient.phone}}"{% endblock patient_phone %}
@@ -51,7 +51,7 @@
 
 
 
-<!-- Edit block -->
+{% comment %} <!-- Edit block --> {% endcomment %}
 
 {% block save-btn %}
 <i class='fas fa-save'></i>&nbsp; save

@@ -21,7 +21,7 @@
 
 <div class='container'>
             <br>
-        <!-- add a new entry button -->
+    
         <div class='d-flex justify-content-between'>
             <a href="{% url 'add_patient' %}" class='btn btn-outline-primary btn-sm'>
                 <i class="fas fa-plus">&nbsp;Add a Patient</i>
@@ -31,7 +31,7 @@
 
         </div>
 
-            <!-- search form -->
+        
         <form method='GET' action="" >
             <div class="input-group input-group-sm mb-3 mt-4">
                 <input type="text" name='query' class='form-control' placeholder="search.. ." value='{{request.GET.query}}'>
@@ -46,8 +46,8 @@
 
         </form>
 
-
-            <!-- patients tables -->
+{% comment %} 
+            <!-- patients tables --> {% endcomment %}
     <center>
         <table class="table table-bordered table-sm mt-4">
             <thead class="table-primary">
@@ -61,7 +61,7 @@
                     <th colspan="2" style="width:14%">Action</th>
                 </tr>
             </thead>
-            <!--  data from the backend -->
+            {% comment %} <!--  data from the backend --> {% endcomment %}
             {% for patient in patients %}
             <tr id="check-td">
                 <td id="responsive-border">{{ patient.name |title }}</td>
@@ -85,7 +85,7 @@
                 
             </tr>
 
-             <!-- delete confirmation -->
+             {% comment %} <!-- delete confirmation --> {% endcomment %}
 
     <div class="modal fade" id="deleteModal{{ patient.pk}}" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -118,7 +118,7 @@
 
 
 
-                <!-- pagination -->
+                {% comment %} <!-- pagination --> {% endcomment %}
 
 <nav class="mt-4 mb-5">
 {% if patients.has_other_pages %}
@@ -169,7 +169,7 @@
 
 
 
-    <!--  error messages  -->
+    {% comment %} <!--  error messages  --> {% endcomment %}
     {% for msg in messages %}
         {% if msg.tags == 'success' %} 
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
