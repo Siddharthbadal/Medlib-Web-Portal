@@ -4,12 +4,14 @@ A portal to store patients records. Admin can read, add, update and delete these
 Also has a search functionality with reset.
 
 
-tech
-    -   Django
-    -   Bootstrap
-    -   JavaScript
-    -   Heroku for deployment
+tech used
+
+    - Django
+    - Bootstrap
+    - JavaScript
+    - heroku for deployment 
+    
+  Live: https://medlibproject.herokuapp.com/
 
 
-![img](https://github.com/Siddharthbadal/
-Medlib-Web-Portal/blob/main/images/img.png)
+![img](https://github.com/Siddharthbadal/Medlib-Web-Portal/blob/main/images/img.png)
