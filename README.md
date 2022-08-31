@@ -12,7 +12,7 @@ tech used
     - heroku for deployment 
     
  
-Project Features:
+Project Features
     * Admin login
     * User creation, update and deletion
     * User search and reset
