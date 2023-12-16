@@ -22,17 +22,31 @@ Project Features
     
 # Project Screenshots
 
-### Home Page
-![img](https://github.com/Siddharthbadal/Medlib-Web-Portal/blob/main/images/img.png)
 
-# Login
-![img](https://github.com/Siddharthbadal/Medlib-Web-Portal/blob/main/images/medlib-home.png)
+![img](https://github.com/Siddharthbadal/Medlib-Web-Portal/assets/55015090/9095d549-fa7e-430f-8f37-432bf3a0f0cc)
 
-# Add a user
-![img](https://github.com/Siddharthbadal/Medlib-Web-Portal/blob/main/images/medlib-adduser.png)
 
-# Search
-![img](https://github.com/Siddharthbadal/Medlib-Web-Portal/blob/main/images/medlib-search.png)
+![medlib-adduser](https://github.com/Siddharthbadal/Medlib-Web-Portal/assets/55015090/05294232-ce23-434b-b2ba-329962243ace)
+
+
+
+
+![medlib-search](https://github.com/Siddharthbadal/Medlib-Web-Portal/assets/55015090/b9e5c86a-3a4a-4b46-8567-883e8980d151)
+
+
+
+![medlib-home](https://github.com/Siddharthbadal/Medlib-Web-Portal/assets/55015090/1f6d8f52-4b17-4122-b077-85d59ce62a75)
+
+
+
+
+
+
+
+
+
+
+
 
 
 
